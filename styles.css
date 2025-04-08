@@ -124,3 +124,129 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
+/* Estilos para los videos */
+.video-container {
+    margin-bottom: 30px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    max-width: 65%;
+    height: 0;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.materiales {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.materiales ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.materiales li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.materiales a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.materiales a:hover {
+    color: #1abc9c;
+}
+
+/* Contenedor principal */
+.material-libro {
+    display: inline-block;
+    width: 45%;
+    margin: 15px auto;
+    text-align: center;
+    vertical-align: top;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.material-libro:hover {
+    transform: translateY(-5px);
+}
+
+/* Enlace con la portada */
+.portada-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.portada-libro {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover */
+.portada-link:hover .portada-libro {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background: rgba(26, 188, 156, 0.9);
+    color: white;
+    padding: 10px;
+    transition: bottom 0.3s ease;
+}
+
+.portada-link:hover .overlay {
+    bottom: 0;
+}
+
+/* Información del libro */
+.info-libro {
+    padding: 15px;
+}
+
+.info-libro h4 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+    font-size: 1.1em;
+}
+
+.info-libro p {
+    margin: 5px 0;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+.meta-info {
+    color: #3498db !important;
+    font-weight: bold;
+}
